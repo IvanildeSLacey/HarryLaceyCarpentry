@@ -12,3 +12,59 @@ body {
     font-weight: 300;
     color: #3a3a3a;
 }
+
+header {
+    background: #172741;
+}
+/* headings and logo */
+
+h1, h2 {
+    font-family: Source Sans Pro, sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#logo {
+    float: left;
+    width: 10%;
+    max-height: 120px;
+    margin-top: 25px;
+    margin-left: 25px;
+    line-height: auto;
+    align-items: center;
+}
+
+/* navigation links */
+
+#nav {
+    font-size: 100%;
+    letter-spacing: 4px;
+    line-height: 170px;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+#nav li {
+    list-style-type: none;
+    padding: 0px 30px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 30px;
+}
+
+#nav a:hover {
+    border-bottom: 1px solid #C4A862;
+}
+
+.active {
+    border-bottom: 2px solid #C4A862;
+    color: white;
+    font-weight: bold;
+}
