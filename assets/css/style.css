@@ -99,34 +99,6 @@ footer {
     color: white;
 }
 
-#call i:hover {
-    color: green;
-}
-
-#facebook i:hover {
-    color: blue;
-}
-
-#whatsapp i:hover {
-    color: green;
-}
-
-#instagram i:hover {
-    color: #DD2A7B;
-}
-
-#contact-call i:hover {
-    color: green;
-}
-
-#contact-facebook i:hover {
-    color: blue;
-}
-
-#contact-whatsapp i:hover {
-    color: green;
-}
-
-#contact-instagram i:hover {
-    color: #DD2A7B;
+.social-networks i:hover {
+    color: #C4A862;
 }
