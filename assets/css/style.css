@@ -72,9 +72,9 @@ h1, h2 {
 
 /* footer */
 footer {
-    line-height: 170px;
     bottom: 0;
     width: 100%;
+    height: 150px;
     display: inline;
     text-align: center;
     position: absolute;
