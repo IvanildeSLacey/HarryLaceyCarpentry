@@ -3,42 +3,109 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
         
         <meta name="description" content="Harry Lacey Carpentry, Carpentry services in Ireland">
         <meta name="keywords" content="Harry Lacey, carpentry services, carpenter Ireland, carpenter Tipperary, carpenter Thurles, carpenter Dublin, joinery, bespoke wardrobes, alcove units, bespoke kitchen, walk-in wardrobes, bespoke office, panneling, slatted wall, interior design">
         <title>Harry Lacey Carpentry</title>
+
+        <!--Fontawesome-->
+        <script src="https://kit.fontawesome.com/feb4a38862.js" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
         <header>
-            <div>
-                <a href="index.html">
-                    <img src="assets/images/HarryLaceyCarpentry.png" id="logo" alt="business logo">
-                </a>
-                <nav>
-                    <ul id="nav">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="aboutus.html">About</a>
-                        </li>
-                        <li>
-                            <a href="galery.html">Galery</a>
-                        </li>
-                        <li>
-                            <a href="contactus.html" class="active">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/HarryLaceyCarpentry.png" id="logo" alt="business logo">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">About</a>
+                    </li>
+                    <li>
+                        <a href="galery.html">Galery</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html" class="active">Contact</a>
+                    </li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
         </header>
-        <div>
-        carrosel image</div>
-        <main>
-        <div>mission statement</div>
+        <section>
+            <h2 id="contact-us">Contact us on:</h2>
+            <ul class="social-networks-contact">
+                <li>
+                    <a href="tel:353877699962" target="_blank" rel="noopeneer" aria-label="Call us on 0877699962"><i class="fa-solid fa-phone"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100071893128347" target="_blank" rel="noopener" aria-label="Visit our facebook page (link opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/mdesigncarpentry/" target="_blank" rel="noopener" aria-label="Check out our instagram page (link opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://wa.me/353877699962" target="_blank" rel="noopener" aria-label="Contact us on whatsapp (opens in a new tab)"><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <form action="https://api.web3forms.com/submit" method="POST">
+    
+                <input type="hidden" name="access_key" value="c743fd89-c217-44c0-92c8-9bab35daa6d2">
+                <h2 id="form-message">Or fill out our form, and we will get back to you shortly<i class="fa-solid fa-arrow-down"></i></h2>
+                <fieldset class="form-section">
+                    <legend>Your Details</legend><br>
+                    <div>
+                        <label for="fname">First Name: </label>
+                        <input id="fname" type="text" name="fname" placeholder="First Name" class="text-input" required>
+                    </div><br>
+                    <div>
+                        <label for="lname">Last Name: </label>
+                        <input id="lname" type="text" name="lname" placeholder="Last Name" class="text-input" required>
+                    </div><br>
+                    <div>
+                        <label for="phone-number">Phone Number: </label>
+                        <input id="phone-number" type="tel" name="phone-number" placeholder="Phone Number" class="text-input" required>
+                    </div><br>
+                    <div>
+                        <label for="email-address">Email: </label>
+                        <input id="email-address" type="email" name="email-address" placeholder="Your email" class="text-input" required>
+                    </div><br>
+                    <div>
+                        <label>
+                            I need help with: <input name="looking-for">
+                        </label><br><br>
+                        <textarea rows="8" cols="90" class="write-box" placeholder="How can we help you?"></textarea><br><br>
+                    </div>
+                    <div>
+                        <label>
+                            How would you like to be contacted? <input name="contact-preference">
+                        </label>
+                        <select id="contat-preference" name="contact-preference" required>
+                            <option value="" disabled selected>Select your option</option>
+                            <option value="email">Email </option>
+                            <option value="phone">Phone</option>
+                        </select>
+                    </div><br>
+                
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <button type="submit" class="submit">Submit Form</button>
+                </fieldset>
+            </form>
+        </section>  
+    
         <footer>
             <div id="footer-content">
                 <ul class="social-networks">
@@ -57,8 +124,8 @@
                 </ul>
             </div>
         </footer>
-        <!-- font awesome script -->
-        <script src="https://kit.fontawesome.com/73eae1132c.js" crossorigin="anonymous">
+
         <script src="assets/js/script.js"></script>
+
     </body>
 </html>
