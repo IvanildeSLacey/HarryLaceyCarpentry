@@ -43,69 +43,84 @@
                 </div>
             </nav>
         </header>
-        <section>
-            <h2 id="contact-us">Contact us on:</h2>
-            <ul class="social-networks-contact">
-                <li>
-                    <a href="tel:353877699962" target="_blank" rel="noopeneer" aria-label="Call us on 0877699962"><i class="fa-solid fa-phone"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=100071893128347" target="_blank" rel="noopener" aria-label="Visit our facebook page (link opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/mdesigncarpentry/" target="_blank" rel="noopener" aria-label="Check out our instagram page (link opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://wa.me/353877699962" target="_blank" rel="noopener" aria-label="Contact us on whatsapp (opens in a new tab)"><i class="fa-brands fa-whatsapp"></i></a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <form action="https://api.web3forms.com/submit" method="POST">
-    
-                <input type="hidden" name="access_key" value="c743fd89-c217-44c0-92c8-9bab35daa6d2">
-                <h2 id="form-message">Or fill out our form, and we will get back to you shortly<i class="fa-solid fa-arrow-down"></i></h2>
-                <fieldset class="form-section">
-                    <legend>Your Details</legend><br>
-                    <div>
-                        <label for="fname">First Name: </label>
-                        <input id="fname" type="text" name="fname" placeholder="First Name" class="text-input" required>
-                    </div><br>
-                    <div>
-                        <label for="lname">Last Name: </label>
-                        <input id="lname" type="text" name="lname" placeholder="Last Name" class="text-input" required>
-                    </div><br>
-                    <div>
-                        <label for="phone-number">Phone Number: </label>
-                        <input id="phone-number" type="tel" name="phone-number" placeholder="Phone Number" class="text-input" required>
-                    </div><br>
-                    <div>
-                        <label for="email-address">Email: </label>
-                        <input id="email-address" type="email" name="email-address" placeholder="Your email" class="text-input" required>
-                    </div><br>
-                    <div>
-                        <label>
-                            I need help with: <input name="looking-for">
-                        </label><br><br>
-                        <textarea rows="8" cols="90" class="write-box" placeholder="How can we help you?"></textarea><br><br>
+        <section class="form-container">
+            <span class="big-circle"></span>
+            <img src="assets/images/hlogo.png" class="hlogo" alt="" />
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Let's get in touch</h3>
+                    <p class="text">
+                        Connect with us bellow or fill out our form and we will get back to you shortly!
+                    </p>
+                    <div class="info">
+                        <div class="information">
+                            <p>We cover all areas from Dublin to Cork and suroundings. </p>
+                        </div>
+                        <div class="information">
+                            <img src="img/email.png" class="icon" alt="" />
+                            <p>harry@hlcarpentry.ie</p>
+                        </div>
+                        <div class="information">
+                            <a href="tel:353877699962" target="_blank" rel="noopeneer" aria-label="Call us on 0877699962">
+                                <i class="fa-solid fa-phone">0877699962</i>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <label>
-                            How would you like to be contacted? <input name="contact-preference">
-                        </label>
-                        <select id="contat-preference" name="contact-preference" required>
-                            <option value="" disabled selected>Select your option</option>
-                            <option value="email">Email </option>
-                            <option value="phone">Phone</option>
-                        </select>
-                    </div><br>
+                    <div class="social-media">
+                        <p>Connect with us :</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100071893128347" target="_blank" rel="noopener" aria-label="Visit our facebook page (link opens in a new tab)">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/mdesigncarpentry/" target="_blank" rel="noopener" aria-label="Check out our instagram page (link opens in a new tab)">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/353877699962" target="_blank" rel="noopener" aria-label="Contact us on whatsapp (opens in a new tab)">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/harry-lacey-70228a47/" target="_blank" rel="noopener" rel="noopener" aria-label="Connect with us on linkedin (link opens in a new tab)">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
                 
-                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                    <button type="submit" class="submit">Submit Form</button>
-                </fieldset>
-            </form>
-        </section>  
-    
+                <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c743fd89-c217-44c0-92c8-9bab35daa6d2">
+                <h3 class="title">Contact us</h3>
+
+                <div class="input-container">
+                    <input type="text" name="fname" class="input"  required/>
+                    <label for="fname">First Name</label>
+                    <span>First Name</span>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="lname" class="input" required/>
+                    <label for="lname">Last Name</label>
+                    <span>Last Name</span>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" class="input" required/>
+                    <label for="email">Email</label>
+                    <span>Email</span>
+                </div>
+                <div class="input-container">
+                    <input type="tel" name="phone" class="input"  required />
+                    <label for="phone">Phone</label>
+                    <span>Phone</span>
+                </div>
+                <div class="input-container textarea">
+                    <textarea name="message" class="input"></textarea>
+                    <label for="message">Message</label>
+                    <span>Message</span>
+                </div>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </section>
         <footer>
             <div id="footer-content">
                 <ul class="social-networks">

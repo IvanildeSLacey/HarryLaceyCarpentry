@@ -1,7 +1,27 @@
+//Form focus to information input area
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
 // Carousel slide script 
 const carouselSlide = document.querySelectorAll(".img-container img");
 
-const timeDelay = 5000;
+const timeDelay = 4000;
 let currentImageCounter = 0; // setting a variable to keep track of the current image (slide)
 
 // carouselSlide[currentImageCounter].style.display = "block";
