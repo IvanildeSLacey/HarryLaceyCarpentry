@@ -16,34 +16,53 @@
     </head>
     <body>
         <header>
-            <nav>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/images/hllogo.png" id="logo" alt="business logo">
-                    </a>
-                </div>
-                <ul class="nav-links">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="aboutus.html">About</a>
-                    </li>
-                    <li>
-                        <a href="galery.html">Galery</a>
-                    </li>
-                    <li>
-                        <a href="contactus.html" class="active">Contact</a>
-                    </li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+            <nav id="nav">
+                <div class="navbar">
+                    <i class='bx bx-menu'></i>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/hllogo.png" id="logo" alt="business logo">
+                        </a>
+                    </div>
+                    <div class="nav-links">
+                      <div class="sidebar-logo">
+                        <span class="logo-name">Harry Lacey</span>
+                        <i class='bx bx-x' ></i>
+                      </div>
+                      <ul class="links">
+                        <li><a href="index.html">HOME</a></li>
+                        <li>
+                          <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                          <a href="#">GALERY</a>
+                          <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                          <ul class="js-sub-menu sub-menu">
+                            <li><a href="#">Wardrobes</a></li>
+                            <li><a href="#">Alcove Units</a></li>
+                            <li><a href="#">Kitchens</a></li>
+                            <li><a href="#">More Projects</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="contactus.html">CONTACT US</a></li>
+                      </ul>
+                    </div>
                 </div>
             </nav>
         </header>
-        <section class="form-container">
+        <div class="wrapper">
+            <div class="static-text">Looking for</div>
+            <ul class="dynamic-text">
+                <li><span>a Unique Design?</span></li>
+                <li><span>Furniture Longevity?</span></li>
+                <li><span>On Hand Experts?</span></li>
+                <li><span>Better Quality?</span></li>
+            </ul>
+        </div>
+        <div id="mission">
+            <a href="#link-form" class="button" aria-label="Open about us page"><span>Get in touch</span></a>
+        </div>
+        <section class="form-container" a id="link-form">
             <span class="big-circle"></span>
             <img src="assets/images/hlogo.png" class="hlogo" alt="" />
             <div class="form">
@@ -137,10 +156,14 @@
                         <a href="https://wa.me/353877699962" target="_blank" rel="noopener" aria-label="Contact us on whatsapp (opens in a new tab)"><i class="fa-brands fa-whatsapp"></i></a>
                     </li>
                 </ul>
+                <div id="copywrite">
+                    <p>@2022 by Harry Lacey Wood Design</p>
+                </div>
             </div>
         </footer>
 
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/script2.js"></script>
 
     </body>
 </html>

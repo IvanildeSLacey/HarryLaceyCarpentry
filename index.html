@@ -15,29 +15,42 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/images/hllogo.png" id="logo" alt="business logo">
-                    </a>
-                </div>
-                <ul class="nav-links">
-                    <li>
-                        <a href="index.html" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="aboutus.html">About</a>
-                    </li>
-                    <li>
-                        <a href="galery.html">Galery</a>
-                    </li>
-                    <li>
-                        <a href="contactus.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+            <header>
+                <nav id="nav">
+                    <div class="navbar">
+                        <i class='bx bx-menu'></i>
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/images/hllogo.png" id="logo" alt="business logo">
+                            </a>
+                        </div>
+                        <div class="nav-links">
+                          <div class="sidebar-logo">
+                            <span class="logo-name">Harry Lacey</span>
+                            <i class='bx bx-x' ></i>
+                          </div>
+                          <ul class="links">
+                            <li><a href="index.html">HOME</a></li>
+                            <li>
+                              <a href="aboutus.html">ABOUT</a>
+                            </li>
+                            <li><a href="galery2.html">Galery2</a></li>
+                            <li>
+                              <a href="galery.html">GALERY</a>
+                              <i class='bx bxs-chevron-down js-arrow arrow'></i>
+                              <ul class="js-sub-menu sub-menu">
+                                <li><a href="#">Wardrobes</a></li>
+                                <li><a href="#">Alcove Units</a></li>
+                                <li><a href="#">Kitchens</a></li>
+                                <li><a href="#">More Projects</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="contactus.html">CONTACT US</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
         
         <div class="carousel">
             <div class="img-container">
@@ -54,7 +67,10 @@
                 Everything we do is made to measure, and carefully designed that you can make the best use of your space, with the best available material within your budget.
             </h1>
             </div>
-    </section>   
+        </section>
+        <div id="abt-btn">
+            <a href="aboutus.html" class="button" aria-label="Open about us page"><span>About Us</span></a>
+        </div>
     
         <footer>
             <div id="footer-content">
@@ -79,6 +95,7 @@
         </footer>
 
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/script2.js"></script>
 
     </body>
 </html>
